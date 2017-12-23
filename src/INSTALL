@@ -1,9 +1,0 @@
-Building PlatinumCore
-
-See doc/readme-qt.rst for instructions on building PlatinumCore QT,
-the intended-for-end-users, nice-graphical-interface, reference
-implementation of PlatinumCore.
-
-See doc/build-*.txt for instructions on building PlatinumCored,
-the intended-for-services, no-graphical-interface, reference
-implementation of PlatinumCore.
