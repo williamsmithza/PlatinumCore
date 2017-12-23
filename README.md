@@ -8,96 +8,73 @@ Copyright Â© 2013 NovaCoin developers
 Copyright Â© 2014 BitcoinDark developers
 Copyright Â© 2015 PlatinumCore developers
 
-Intro
------
-PlatinumCore is a free open source project derived from Bitcoin. PlatinumCore has a rapidly changing Proof of Work and Proof of Stake system, and it's first goal is to test an evolving POS system and observe it's effects on the blockchain and in the altcoin marketplace.
+Platinum Core - South Africa
 
-PlatinumCore is built on the foundation of Bitcoin, PPCoin, Novacoin, and BitcoinDark, with a modified POS system.
+Platinum Core is a free open source project derived from Bitcoin. Platinum Core has a rapidly changing Proof of Work and Proof of Stake system, and it's first goal is to test an evolving POS system and observe it's effects on the blockchain and in the altcoin marketplace.
 
-Short: PLTCR
+Platinum Core is built on the foundation of Bitcoin, PPCoin, Novacoin, and BitcoinDark, with a modified POS system.
 
+We are testing also a new strategy where there is no block halving but instead we kick off with a low reward system which rapidly increase as the number of blocks get mined. This will hopefully settle in at a good market price for future trades. It's goal is also to encourage miners to get higher rewards as the number of blocks increase.
+
+There will be a 1 % premine - premine goes towards Developer for Bounties, Donations, Giveawys & Future development of the coin.
+
+Website: www.platinumcore.co.za
+Email: info@platinumcore.co.za
+
+Coin Specifications
+Coin Name - Platinum Core
+Ticker - PLTCR
+Reward Type - POW / DPOS / POS
 Algorithm SHA256
+Max Money Supply -  approximately 300 000 000 PLTCR
+POW Money Supply -  100 249 995 PLTCR
+DPOS Money Supply - 65 250 000 PLTCR
+Normal POS Money Supply at approximately 9 % interest per year after block 2 200 000 - 134 500 005 PLTCR
+Block Time  - 120 seconds (2 minutes)
+Number of confirmations required to mature - 30
+No block halving - rewards increase as more blocks get mined
+RPCPORT - 31452
 
+PlatinumCore.conf
 
-RPC Port: 31452
-P2P Port: 31454
+rpcuser=yourplatinumcoreusername
+rpcpassword=yourplatinumcorepassword
+rpcport=31452
+server=1
+daemon=1
+rpcallowip=127.0.0.1
 
+addnode=169.159.129.254
+addnode=169.159.129.250
+addnode=127.0.0.1:31452
 
+Rewards - POW - Proof Of Work Phase
 
-30 Seconds Per Block
-100 Blocks to Confirm
-20MB Blocksize
+Block 1 to 1 - 1 000 000 PLTCR per block
+Block 2 to 50 000 - 5 PLTCR per block
+Block 50 001 to 150 000 - 10 PLTCR per block
+Block 150 001 to 350 000 - 20 PLTCR per block
+Block 350 001 to 650 000 - 40 PLTCR per block
+Block 650 001 to 1 050 000 - 80 PLTCR per block
+Block 1 050 001	to 1 550 000 - 100 PLTCR per block
 
+LAST POW BLOCK 1 550 000
 
-Block Reward Schedule - Proof of Work Phase
--------------------------------------------
-Block 1 to 100
-    100 PLTCR 
+Rewards - DPOS - Dynamic Proof Of Stake Phase
 
-Block 101 to 700
-    300 PLTCR
-	
-Block 701 to 1000
-	250 PLTCR
+Block 50 000 to 100 000 - 5 PLTCR per block
+Block 100 001 to 200 000 - 10 PLTCR per block
+Block 200 001 to 400 000 - 15 PLTCR per block
+Block 400 001 to 700 000 - 20 PLTCR per block
+Block 700 001 to 1 100 000 - 25 PLTCR per block
+Block 1 100 001 to 1 600 000 - 30 PLTCR per block
+Block 1 600 001 to 2 200 000 - 50 PLTCR per block
 
-Block 1001 to 1600
-	200 PLTCR
+LAST DPOS BLOCK 2 200 000
 
-Block 1601 to 2200
-	150 PLTCR
+Rewards - POS - Proof Of Stake Phase
 
-Block 2201 to 2800
-	100 PLTCR
+At approximately 9 % interest per year after block 2 200 000
 
-Block 2801 to 3400
-	50 PLTCR
-
-Proof of Work rejected after block 3400
-
-
-Total approx potential coins from POW: 565,000, lower with mixed POS at block 2700. 3 days mining.
- 
-
-
-
-
-
-Block Reward Schedule - Dynamic Proof of Stake Phase
--------------------------------------------
-Block 2700 to 4000
-	10 PLTCR
-	
-Block 4001 to 6600
-	20 PLTCR
-	
-Block 6600 to 6700
-	100 PLTCR
-	
-Block 6701 to 8500
-	15 PLTCR
-
-Block 8501 to 10000
-	50 PLTCR 
-
-Block 10001 to 20000
-	10 PLTCR
-
-Block 20001 to 21000
-	50 PLTCR
-
-
-Dynamic POS last approx one month. End Block 21,000
-	
-Total Approx Coins from first month of Dynamic POS: 392,000
-
-Total Approx Total Coins 950k
-
-	After block 21,000 POS goes to approx 9% yearly.
-
-
-
-
-
-
-See bitcointalk.org PlatinumCore thread for more info
+See bitcointalk.org PlatinumCore thread for more info https://bitcointalk.org/index.php?topic=2638104.msg26852863#msg26852863
 
