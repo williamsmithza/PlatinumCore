@@ -76,5 +76,4 @@ Rewards - POS - Proof Of Stake Phase
 
 At approximately 9 % interest per year after block 2 200 000
 
-See bitcointalk.org PlatinumCore thread for more info https://bitcointalk.org/index.php?topic=2638104.msg26852863#msg26852863
-
+See bitcointalk.org PlatinumCore thread for more info https://bitcointalk.org/index.php?topic=2638104.0
