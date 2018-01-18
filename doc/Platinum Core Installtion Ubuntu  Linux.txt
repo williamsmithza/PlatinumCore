@@ -1,0 +1,76 @@
+Here is the guide to build Platinum Core on Linux / Ubuntu
+
+All these dependencies are required for most of the coins you wish to build.
+
+Build your dependencies: Install dependencies for building Platinum Core
+
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install git
+sudo apt-get install build-essential
+sudo apt-get install libtool
+sudo apt-get install autotools-dev
+sudo apt-get install autoconf
+sudo apt-get install pkg-config
+sudo apt-get install libssl-dev
+sudo apt-get install libboost-all-dev
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libminiupnpc-dev 
+sudo apt-get install libdb4.8-dev 
+sudo apt-get install libdb4.8++-dev  
+sudo apt-get install libminiupnpc-dev
+
+git clone https://www.github.com/williamsmithza/PlatinumCore
+
+cd PlatinumCore/src
+mkdir obj
+cd obj
+mkdir zerocoin
+cd ..
+cd leveldb
+chmod 755 build_detect_platform
+sudo make clean
+cd ..
+
+sudo make -f makefile.unix USE_UPNP=-
+
+Once build is finish just start up your wallet
+./PlatinumCored
+
+Now it will ask you to setup PlatinumCore.conf
+
+rpcuser=yourplatinumcoreusername
+rpcpassword=yourplatinumcorepassword
+rpcport=31452
+server=1
+daemon=1
+rpcallowip=127.0.0.1
+
+addnode=169.159.129.254:31452
+addnode=169.159.129.250:31452
+addnode=169.159.129.254
+addnode=169.159.129.250
+addnode=127.0.0.1:31452
+addnode=104.210.159.72:53369
+addnode=104.210.159.72:53646
+addnode=13.65.28.200:50783
+addnode=13.65.28.200:50980
+addnode=169.159.129.250:31454
+addnode=169.159.129.254:31454
+addnode=185.228.232.215:31454
+addnode=46.4.88.116:31454
+addnode=47.220.172.127:55863
+addnode=51.15.162.15:39050
+addnode=51.15.164.53
+addnode=51.15.185.7:31454
+addnode=51.255.44.235:33132
+addnode=52.162.125.33:51925
+addnode=52.162.125.33:52094
+addnode=52.171.132.233:54143
+addnode=52.171.132.233:54334
+addnode=52.237.137.53:53218
+
+Save your PlatinumCore.conf and retsart your wallet
+
+./PlatinumCored
